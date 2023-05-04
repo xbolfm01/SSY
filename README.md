@@ -36,16 +36,19 @@ Pomocou funkcie <i>appUartSendMessageHR</i> je zabezpečený čitatelný formát
 <h4> Ukážky z Putty </h4>
 
 <h5> Ukážka pridelenia adresy 8002 zariadeniu, ktoré si o ňu zažiadalo. Taktiež formát prijatých správ: </h5>
+
 ![Pridelenie adresy dalsiemu pripojenemu zariadeniu](https://user-images.githubusercontent.com/60688750/236337279-817e39aa-17f4-4202-b2f2-08a8c464cd77.png)
 
-
 <h5>Ukážka toho, že koncovému zariadeniu bola adresa pridelená: </h5>
+
 ![Pridelenie adresy dalsiemu zariadeniu 8002](https://user-images.githubusercontent.com/60688750/236337975-c041c03b-886d-4b44-8b20-3d8584874a3b.png) 
 
 <h5>Schéma znázorňujúca vzdialenosti d1 a d2, tzn. známe vzdialenosti zariadení vzhľadom na koordinátora: </h5>
+
 ![Schéma zapojenia](https://user-images.githubusercontent.com/60688750/236338254-6d5f3454-8121-4bc3-a3a2-bc2fda4a9efb.JPEG)
 
 <h5>Ručné výpočty vzdialenosti d a zoslabovacieho člena (éta): </h5>
+
 ![Výpočty](https://user-images.githubusercontent.com/60688750/236338373-f5a1a74a-1785-4110-bd3a-cc51b856d94e.JPEG)
 
 
