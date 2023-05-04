@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATmega128RFA1</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>LWM_MSSY_deRF</AssemblyName>
+    <Name>LWM_MSSY_deRF</Name>
+    <RootNamespace>LWM_MSSY_deRF</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.jtagicemkii</avrtool>
+    <avrtoolserialnumber>090000007C89</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1EA701</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_jtagice3plus>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>0</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.jtagice3plus</ToolType>
+      <ToolNumber>J30200012976</ToolNumber>
+      <ToolName>JTAGICE3</ToolName>
+    </com_atmel_avrdbg_tool_jtagice3plus>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
+    <com_atmel_avrdbg_tool_jtagicemkii>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.jtagicemkii</ToolType>
+      <ToolNumber>090000007C89</ToolNumber>
+      <ToolName>JTAGICE mkII</ToolName>
+    </com_atmel_avrdbg_tool_jtagicemkii>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+    <custom>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>
+        </InterfaceName>
+      </ToolOptions>
+      <ToolType>custom</ToolType>
+      <ToolNumber>
+      </ToolNumber>
+      <ToolName>Custom Programming Tool</ToolName>
+    </custom>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega128rfa1 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.0.90\gcc\dev\atmega128rfa1"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.90\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega128rfa1 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.0.90\gcc\dev\atmega128rfa1"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>PHY_ATMEGARFA1</Value>
+            <Value>HAL_ATMEGA128RFA1</Value>
+            <Value>F_CPU=8000000</Value>
+            <Value>PLATFORM_deRFMEGA</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.90\include</Value>
+            <Value>../Stack/hal/atmega128rfa1/inc</Value>
+            <Value>../Stack/hal/drivers/atmega128rfa1/inc</Value>
+            <Value>../Stack/nwk/inc</Value>
+            <Value>../Stack/phy/atmega128rfa1/inc</Value>
+            <Value>../Stack/sys/inc</Value>
+            <Value>..</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ADC_lib.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ADC_lib.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="App_SSY\app_ssy.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="App_SSY\app_ssy.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="commands.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="commands.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\config_derf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\eeprom.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\eeprom.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\io_access.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\io_access.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\sensors.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\sensors.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\sensors_interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\twi_master.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\twi_master.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\usb.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="derf\usb.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\atmega128rfa1\inc\hal.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\atmega128rfa1\inc\halGpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\atmega128rfa1\inc\halTimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\atmega128rfa1\src\hal.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\atmega128rfa1\src\halTimer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\drivers\atmega128rfa1\inc\halBoard.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\drivers\atmega128rfa1\inc\halLed.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\drivers\atmega128rfa1\inc\halSleep.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\drivers\atmega128rfa1\inc\halUart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\drivers\atmega128rfa1\src\halSleep.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\hal\drivers\atmega128rfa1\src\halUart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwk.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkCommand.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkDataReq.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkFrame.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkGroup.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkRoute.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkRouteDiscovery.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkRx.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkSecurity.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\inc\nwkTx.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwk.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkDataReq.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkFrame.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkGroup.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkRoute.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkRouteDiscovery.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkRx.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkSecurity.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\nwk\src\nwkTx.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\phy\atmega128rfa1\inc\atmegarfa1.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\phy\atmega128rfa1\inc\phy.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\phy\atmega128rfa1\src\phy.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\inc\sys.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\inc\sysConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\inc\sysEncrypt.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\inc\sysTimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\inc\sysTypes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\src\sys.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\src\sysEncrypt.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Stack\sys\src\sysTimer.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="derf" />
+    <Folder Include="App_SSY" />
+    <Folder Include="Stack" />
+    <Folder Include="Stack\hal" />
+    <Folder Include="Stack\hal\atmega128rfa1\inc" />
+    <Folder Include="Stack\hal\atmega128rfa1\src" />
+    <Folder Include="Stack\hal\drivers" />
+    <Folder Include="Stack\hal\atmega128rfa1" />
+    <Folder Include="Stack\hal\drivers\atmega128rfa1" />
+    <Folder Include="Stack\hal\drivers\atmega128rfa1\inc" />
+    <Folder Include="Stack\hal\drivers\atmega128rfa1\src" />
+    <Folder Include="Stack\nwk\inc" />
+    <Folder Include="Stack\nwk\src" />
+    <Folder Include="Stack\phy\atmega128rfa1" />
+    <Folder Include="Stack\phy\atmega128rfa1\inc" />
+    <Folder Include="Stack\phy\atmega128rfa1\src" />
+    <Folder Include="Stack\sys" />
+    <Folder Include="Stack\phy" />
+    <Folder Include="Stack\nwk" />
+    <Folder Include="Stack\sys\inc" />
+    <Folder Include="Stack\sys\src" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
