@@ -34,5 +34,19 @@ calculateDistanceFromRSSI </i>. Funkcia pracuje so známymi hodnotami rssi (RSSI
 Pomocou funkcie <i>appUartSendMessageHR</i> je zabezpečený čitatelný formát príjmaných dát. 
 
 <h5> Ukážky z Putty </h5>
+
+Ukážka pridelenia adresy 8002 zariadeniu, ktoré si o ňu zažiadalo. Taktiež formát prijatých správ: 
 ![Pridelenie adresy dalsiemu pripojenemu zariadeniu](https://user-images.githubusercontent.com/60688750/236337279-817e39aa-17f4-4202-b2f2-08a8c464cd77.png)
+
+
+Ukážka toho, že koncovému zariadeniu bola adresa pridelená:
+![Pridelenie adresy dalsiemu zariadeniu 8002](https://user-images.githubusercontent.com/60688750/236337975-c041c03b-886d-4b44-8b20-3d8584874a3b.png) 
+
+Schéma znázorňujúca vzdialenosti d1 a d2, tzn. známe vzdialenosti zariadení vzhľadom na koordinátora: 
+![Schéma zapojenia](https://user-images.githubusercontent.com/60688750/236338254-6d5f3454-8121-4bc3-a3a2-bc2fda4a9efb.JPEG)
+
+Ručné výpočty vzdialenosti d a zoslabovacieho člena (éta): 
+![Výpočty](https://user-images.githubusercontent.com/60688750/236338373-f5a1a74a-1785-4110-bd3a-cc51b856d94e.JPEG)
+
+
 
