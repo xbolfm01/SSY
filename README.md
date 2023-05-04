@@ -30,22 +30,22 @@ Následne sa pomocou funkcie zoslabovaci_clen (éta) spočíta útlmový člen. 
 Následne sa pomocou známej hodnoty zoslabovacieho člena može spočítat vzdialenost medzi koordinátorom a daným zariadením. Toto rieši funkcia <i>
 calculateDistanceFromRSSI </i>. Funkcia pracuje so známymi hodnotami rssi (RSSIx) a vzdialenostou DISTANCE1 (dx), to znamená, že sa jedná o parametre pre zariadenie, ktorého vzdialenosť od koordinátora poznáme. Následne parameter rssi_2 (RSSId) predstavuje prijatú hodnotu RSSI od zariadenia, ktorého vzdialenosť počítame. Po dosadení do vzorca (obrázok 2) vyšlo, že zariadenie sa nachádza približne 1,82m od koordinátora, čo odpovedalo realite. Pri volaní tejto funkcie v kóde, sa používa definovaná vzdialenosť DISTANCE_1, ktorá predstavuje známu vzdialenosť, následne sa z poľa <i> pole_ulozenych_adres </i> vyberie RSSI pre známe zariadenia označené ako PRIMAR. Potom sa vyberie ďalší prijatý údaj a použje už známa vypočítaná hodnota zoslabovacieho člena. 
 
-<h5> Príjimaný formát dát </h5>
+<h4> Príjimaný formát dát </h4>
 Pomocou funkcie <i>appUartSendMessageHR</i> je zabezpečený čitatelný formát príjmaných dát. 
 
-<h5> Ukážky z Putty </h5>
+<h4> Ukážky z Putty </h4>
 
-Ukážka pridelenia adresy 8002 zariadeniu, ktoré si o ňu zažiadalo. Taktiež formát prijatých správ: 
+<h5> Ukážka pridelenia adresy 8002 zariadeniu, ktoré si o ňu zažiadalo. Taktiež formát prijatých správ: </h5>
 ![Pridelenie adresy dalsiemu pripojenemu zariadeniu](https://user-images.githubusercontent.com/60688750/236337279-817e39aa-17f4-4202-b2f2-08a8c464cd77.png)
 
 
-Ukážka toho, že koncovému zariadeniu bola adresa pridelená:
+<h5>Ukážka toho, že koncovému zariadeniu bola adresa pridelená: </h5>
 ![Pridelenie adresy dalsiemu zariadeniu 8002](https://user-images.githubusercontent.com/60688750/236337975-c041c03b-886d-4b44-8b20-3d8584874a3b.png) 
 
-Schéma znázorňujúca vzdialenosti d1 a d2, tzn. známe vzdialenosti zariadení vzhľadom na koordinátora: 
+<h5>Schéma znázorňujúca vzdialenosti d1 a d2, tzn. známe vzdialenosti zariadení vzhľadom na koordinátora: </h5>
 ![Schéma zapojenia](https://user-images.githubusercontent.com/60688750/236338254-6d5f3454-8121-4bc3-a3a2-bc2fda4a9efb.JPEG)
 
-Ručné výpočty vzdialenosti d a zoslabovacieho člena (éta): 
+<h5>Ručné výpočty vzdialenosti d a zoslabovacieho člena (éta): </h5>
 ![Výpočty](https://user-images.githubusercontent.com/60688750/236338373-f5a1a74a-1785-4110-bd3a-cc51b856d94e.JPEG)
 
 
