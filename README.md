@@ -32,3 +32,7 @@ calculateDistanceFromRSSI </i>. Funkcia pracuje so známymi hodnotami rssi (RSSI
 
 <h5> Príjimaný formát dát </h5>
 Pomocou funkcie <i>appUartSendMessageHR</i> je zabezpečený čitatelný formát príjmaných dát. 
+
+<h5> Ukážky z Putty </h5>
+![Pridelenie adresy dalsiemu pripojenemu zariadeniu](https://user-images.githubusercontent.com/60688750/236337279-817e39aa-17f4-4202-b2f2-08a8c464cd77.png)
+
